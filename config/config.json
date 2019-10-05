@@ -1,29 +1,21 @@
 {
-  "name": "eslint-example",
-  "version": "1.0.0",
-  "description": "Eslint Example",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "lint": "./node_modules/.bin/eslint **/*.js --quiet",
-    "test": "npm run lint"
+  "development": {
+    "username": "root",
+    "password": "Z5hjd875*!",
+    "database": "exampledb",
+    "host": "localhost",
+    "dialect": "mysql"
   },
-  "license": "ISC",
-  "dependencies": {
-    "eslint-plugin-prettier": "^3.1.1"
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "testdb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
   },
-  "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-html": "^6.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-react": "^7.14.3"
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }
-Collapse
-
-
-
-

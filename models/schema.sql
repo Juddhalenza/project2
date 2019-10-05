@@ -1,5 +1,23 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+DROP DATABASE IF EXISTS nasa_db;
+CREATE DATABASE nasa_db;
 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+USE nasa_db;
+
+CREATE TABLE users (
+    id INTEGER(11) NOT NULL AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    pass PASSWORD(11) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE fave_pics (
+    id INTEGER(11) NOT NULL AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    url_link URL(255) NOT NULL,
+    userID INTEGER NOT NULL,
+    FOREIGN KEY (userID) REFERENCES users(id)
+);
+
+SELECT * FROM users;
+SELECT * FROM fave_pics;

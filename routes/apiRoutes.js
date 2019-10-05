@@ -24,12 +24,12 @@ module.exports = function(app) {
   // nasa api search
   app.post("/api/rovers", function(req, res) {
     // example variable for date manipulation in axios call
-    // date = currentDate;
+   date = currentDate;
     // wrap axios call in forLoop
     //Create call on get route for rovers page
     req.axios
       .get(
-        "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-2-8&api_key=Yg0nubAuazdBXPOMSsk7GcCa4wjJjAIaYVSBjB78"
+        "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date="+date+"&api_key=Yg0nubAuazdBXPOMSsk7GcCa4wjJjAIaYVSBjB78"
       )
       .then(function(data) {
         return res.render("rovers", data);

@@ -31,9 +31,9 @@ var API = {
 };
 
 // refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
+var dataResult = function() {
   API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
+    var $examples = data.id(function(result) {
       var $a = $("<a>")
         .text(example.text)
         .attr("href", "/example/" + example.id);

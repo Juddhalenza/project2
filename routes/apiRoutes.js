@@ -21,7 +21,7 @@ module.exports = function(app) {
       res.json(dbExample);
     });
   });
-  // nasa api search
+  // nasa api search TEST
   app.post("/api/rovers", function(req, res) {
     // example variable for date manipulation in axios call
     // date = currentDate;

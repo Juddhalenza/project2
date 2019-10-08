@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Harkirat02",
-    "database": "exampledb",
+    "password": "2633Ocean",
+    "database": "NASA_db",
     "host": "localhost",
     "dialect": "mysql"
   },
@@ -18,4 +18,7 @@
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
+
 }
+
+

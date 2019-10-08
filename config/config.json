@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Z5hjd875*!",
-    "database": "exampledb",
+    "database": "nasa_db",
     "host": "localhost",
     "dialect": "mysql"
   },

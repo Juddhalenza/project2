@@ -34,15 +34,5 @@ module.exports = function(app) {
         return res.render("rovers", data);
       });
   });
-  // for (var i = 0; i < data.length; i++) {
-  //   if (chosen === data[i].roverId) {
-  //     return res.json(data[i]);
-  //   }
-  // }
+  
 };
-// nasa api search
-// app.post("/api/rovers", function(req,res) {
-// example variable for date manipulation in axios call
-// wrap axios call in forLoop
-//Create call on get route for rovers page
-// })

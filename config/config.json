@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "2633Ocean",
-    "database": "NASA_db",
+    "password": "",
+    "database": "exampledb",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "",
+    "password": null,
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
@@ -18,7 +18,5 @@
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
-
 }
-
 

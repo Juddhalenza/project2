@@ -1,18 +1,34 @@
 <div id="mars">
-<div class="container">
-<h1>Mars Weather to Explore!!</h1>
-
-{{#each sol_key}}
-
-	<div class="col-sm-9 text-center">
-		
-		
-			sol_key: {{this.Season}}
-
-		
-			
-		</div>
-
-		{{/each}}
-	</div>
+    <div class="container">
+        <h1>Mars Weather to Explore!!</h1>
+        {{!-- data comes in as object  we use each on it--}}
+        {{#each this}}
+        {{!-- then we target each object key i.e. 302, 303, etc --}}
+        {{!-- ensure no emty divs --}}
+        {{#if this.First_UTC}}
+        <div>
+            Date: {{this.First_UTC}}
+        </div>
+        {{/if}}
+        {{#if this.Season}}
+        <div class="{{@key}}" class="col-sm-9 text-center">
+            {{!-- Then we can target the item we need.  --}}
+            {{!-- Keep nesting as needed --}}
+            Season: {{this.Season}}
+        </div>
+        {{/if}}
+        {{#if this.AT}}
+        <div>
+            Low: {{this.AT.mn}}
+            High: {{this.AT.mx}}
+        </div>
+        {{/if}}
+        <br>
+		{{#if this.WD}}
+    	<div>
+        	WD: {{this.WD.most_common.compass_point}}
+    	</div>
+		{{/if}}
+        {{/each}}
+    </div>
 </div>

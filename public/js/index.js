@@ -103,11 +103,13 @@ $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
 
 
-//Picture of the day
+//Default Picture
 var mySpaceImg = $('<img alt="image">').attr('src', 'https://apod.nasa.gov/apod/image/1901/sombrero_spitzer_1080.jpg');
 
 $('#myPictureArea').append(mySpaceImg);
 
+
+// Pic of the Day Data
 $('#apod_search_btn').on("click", function() {
   var date = $("#apod_search").val();
   console.log('date', date);
@@ -120,7 +122,7 @@ $('#apod_search_btn').on("click", function() {
   }).done(function(res) {
     console.log('SUCCESS - Loaded daily image', res);
     $("#myPictureArea").html('<img src="' + res.url + '" alt="daily image" />');
-    $()
+    // $("#apod_title").html("<h4")
   })
     .error(function(err) {
       console.error("ERR - Failed to load Daily Image", err);

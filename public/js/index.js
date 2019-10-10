@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable quotes */
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
@@ -22,6 +24,7 @@ var API = {
       type: "GET"
     });
   },
+
   deleteExample: function(id) {
     return $.ajax({
       url: "api/examples/" + id,
@@ -31,9 +34,9 @@ var API = {
 };
 
 // refreshExamples gets new examples from the db and repopulates the list
-// var result = function() {
+// var refreshExamples = function() {
 //   API.getExamples().then(function(data) {
-//     var $examples = data.id(function(result) {
+//     var $examples = data.map(function(example) {
 //       var $a = $("<a>")
 //         .text(example.text)
 //         .attr("href", "/example/" + example.id);

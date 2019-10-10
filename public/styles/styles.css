@@ -5,7 +5,6 @@
  body {
   background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg") no-repeat center center fixed;
   background-size: cover;
-
  }
 
 h1 {
@@ -26,7 +25,6 @@ h2 {
 img {
   width: 750px;
   height: 550px;
- 
 }
 
 input.uk-search-input {
@@ -41,9 +39,14 @@ button.btn.btn-outline-danger {
   width:200px;
   font-size: 20px;
   text-align: center;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 
 nav.navbar.navbar-dark.bg-dark {
   background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg");
+}
+
+#astronaut {
+  height: 200px;
+  width:150px;
 }

@@ -1,5 +1,5 @@
-/* eslint-disable indent */
-/* eslint-disable prettier/prettier */
+// /* eslint-disable indent */
+// /* eslint-disable prettier/prettier */
 // var url = "https://api.nasa.gov/planetary/apod?date=2019-10-07&api_key=Yg0nubAuazdBXPOMSsk7GcCa4wjJjAIaYVSBjB78";
 // $(document).ready(function() {
 //     var apodData = [];

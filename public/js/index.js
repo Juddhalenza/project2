@@ -122,11 +122,13 @@ $('#apod_search_btn').on("click", function() {
   }).done(function(res) {
     console.log('SUCCESS - Loaded daily image', res);
     $("#myPictureArea").html('<img src="' + res.url + '" alt="daily image" />');
-    // $("#apod_title").html("<h4")
+    $("#apod_title").html("<h2>" + res.title + "</h2>");
+    $("#apod_date").html("<h4>Picture of the day for: " + res.date + "</h4>");
+    $("#apod_expl").html("<p>" + res.explanation + "</p>");
   })
     .error(function(err) {
       console.error("ERR - Failed to load Daily Image", err);
     });
 });
 
-console.log("$('#apod_search_btn')", $('#apod_search_btn'));
+// console.log("$('#apod_search_btn')", $('#apod_search_btn'));

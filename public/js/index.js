@@ -102,7 +102,29 @@ $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
 
+
 //Picture of the day
 var mySpaceImg = $('<img alt="image">').attr('src', 'https://apod.nasa.gov/apod/image/1901/sombrero_spitzer_1080.jpg');
 
 $('#myPictureArea').append(mySpaceImg);
+
+$('#apod_search_btn').on("click", function() {
+  var date = $("#apod_search").val();
+  console.log('date', date);
+  var queryURL = "https://api.nasa.gov/planetary/apod?date=" + date + "&api_key=Yg0nubAuazdBXPOMSsk7GcCa4wjJjAIaYVSBjB78";
+  console.log(queryURL);
+
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).done(function(res) {
+    console.log('SUCCESS - Loaded daily image', res);
+    $("#myPictureArea").html('<img src="' + res.url + '" alt="daily image" />');
+    $()
+  })
+    .error(function(err) {
+      console.error("ERR - Failed to load Daily Image", err);
+    });
+});
+
+console.log("$('#apod_search_btn')", $('#apod_search_btn'));

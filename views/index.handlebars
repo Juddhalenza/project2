@@ -1,5 +1,4 @@
-
-<div id="home">
+{{!-- <div id="home">
   {{body}}
   <div class="container">
     
@@ -33,4 +32,45 @@
       </div>
     </div>
   </div>
+</div> --}}
+
+
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+      
+<nav class="navbar navbar-dark bg-dark" >
+  <form class="form-inline">
+    <button class="btn btn-outline-danger" type="button">Sky Gazer</button>
+     <button class="btn btn-outline-danger" href="https://localhost:3000/rovers" type="button">Track the Rover</button>
+      <button class="btn btn-outline-danger" href="" type="button">Mars Weather</button>
+  </form>
+</nav>
+        <h1>Sky Gazer</h1>
+        <h2>Picture of the Day!</h2>
+    {{!-- Search Bar --}}
+    <div class="uk-margin">
+      <form class="uk-search uk-search-default">
+        <span uk-search-icon></span>
+        <input id="apod_search" class="uk-search-input" type="search" placeholder="Search...YYYY-MM-DD">
+      </form>
+      <button class="btn btn-danger" id="apod_search_btn">Search</button>
+    </div>
+    {{!-- Image --}}
+    <div id="myPictureArea"></div>
+    {{!-- Image Title --}}
+    <h4 id="apod_title"></h4>
+    {{!-- Image Date --}}
+    <h4 id="apod_date"></h4>
+    {{!-- Image Explanation --}}
+    <p></p>
+    
+    
+       
+      </div>
+    </div>
+  </div>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>

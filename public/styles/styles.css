@@ -1,33 +1,46 @@
 .list-group-item {
   line-height: 2.5;
 }
+
  body {
   background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg") no-repeat center center fixed;
   background-size: cover;
  }
+
 h1 {
   font-family: 'Faster One', cursive;
-  color:white;
+  color: white;
   font-size: 6.5em;
   font-weight: 800;
   text-align: center;
 }
+
 h2 {
   font-size: 3em;
   color: white;
   font-family: 'Bangers', cursive;
   text-align: center;
 }
-img {
-  width: 750px;
-  height: 550px;
+
+h4 {
+  font-size: 2em;
+  color: white;
+  font-family: 'Bangers', cursive;
+  text-align: center;
 }
+
+img {
+  width: 725px;
+  height: 500px;
+}
+
 input.uk-search-input {
   background-color: black;
   color: white;
   padding: 5px; 
   width: 750px;
 }
+
 button.btn.btn-outline-danger {
   font-family: 'Bangers', cursive;
   width:200px;
@@ -35,6 +48,30 @@ button.btn.btn-outline-danger {
   text-align: center;
   margin-left: 20px;
 }
+
 nav.navbar.navbar-dark.bg-dark {
   background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg");
+}
+
+/* CSS for PICTURE OF THE DAY STUFF */
+#myPictureArea {
+  border: 1px solid white;
+  margin-top: 75px;
+}
+
+#apod_title {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#apod_date {
+  color: white;
+  text-align: center;
+}
+
+#apod_expl {
+  color:  white;
+  text-align: center;
 }

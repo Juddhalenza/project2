@@ -1,40 +1,3 @@
-{{!-- <div id="home">
-  {{body}}
-  <div class="container">
-    
-    <div class="row">
-      <div class="col-8 offset-2">
-
-      
-
-<nav class="navbar navbar-dark bg-dark" >
-  <form class="form-inline">
-    <button class="btn btn-outline-danger" type="button">Sky Gazer</button>
-     <button class="btn btn-outline-danger" type="button">Track the Rover</button>
-  </form>
-</nav>
-
-        <h1>Sky Gazer</h1>
-
-        <h2>Picture of the Day!</h2>
-
-    <div id="myPictureArea"></div>
-
-    <div class="uk-margin">
-    <form class="uk-search uk-search-default">
-        <span uk-search-icon></span>
-        <input class="uk-search-input" type="search" placeholder="Search...YYYY-MM-DD">
-    </form>
-    </div>
-    
-       
-
-      </div>
-    </div>
-  </div>
-</div> --}}
-
-
 <div id="home">
   <div class="container">
     <div class="row">
@@ -43,7 +6,7 @@
 <nav class="navbar navbar-dark bg-dark" >
   <form class="form-inline">
     <button class="btn btn-outline-danger" type="button">Sky Gazer</button>
-     <button class="btn btn-outline-danger" href="https://localhost:3000/rovers" type="button">Track the Rover</button>
+     <button class="btn btn-outline-danger" href="/rovers" type="button">Track the Rover</button>
       <button class="btn btn-outline-danger" href="" type="button">Mars Weather</button>
   </form>
 </nav>
@@ -53,17 +16,20 @@
     <div class="uk-margin">
       <form class="uk-search uk-search-default">
         <span uk-search-icon></span>
-        <input id="apod_search" class="uk-search-input" type="search" placeholder="Search...YYYY-MM-DD">
+        <input id="apod_search" class="uk-search-input" type="search" placeholder="Enter a date in this format:  [ YYYY-MM-DD ]">
       </form>
-      <button class="btn btn-danger" id="apod_search_btn">Search</button>
+      <button class="btn btn-danger float-right" id="apod_search_btn">Search</button>
     </div>
+
+    
     {{!-- Image --}}
     <div id="myPictureArea"></div>
     {{!-- Image Title --}}
-    <h4 id="apod_title"></h4>
+    <div id="apod_title"></div>
     {{!-- Image Date --}}
-    <h4 id="apod_date"></h4>
+    <div id="apod_date"></div>
     {{!-- Image Explanation --}}
+    <div id="apod_expl"></div>
     <p></p>
     
     

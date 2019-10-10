@@ -1,3 +1,49 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+ body {
+  background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+ }
+
+h1 {
+  font-family: 'Faster One', cursive;
+  color:white;
+  font-size: 6.5em;
+  font-weight: 800;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+  color: white;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+}
+
+img {
+  width: 750px;
+  height: 550px;
+ 
+}
+
+input.uk-search-input {
+  background-color: black;
+  color: white;
+  padding: 5px; 
+  width: 750px;
+}
+
+button.btn.btn-outline-danger {
+  font-family: 'Bangers', cursive;
+  width:200px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 100px;
+}
+
+nav.navbar.navbar-dark.bg-dark {
+  background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg");
+}

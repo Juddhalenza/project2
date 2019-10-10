@@ -97,3 +97,9 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+
+//Picture of the day
+var mySpaceImg = $('<img alt="image">').attr('src', 'https://apod.nasa.gov/apod/image/1901/sombrero_spitzer_1080.jpg');
+
+$('#myPictureArea').append(mySpaceImg);

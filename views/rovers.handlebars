@@ -1,21 +1,19 @@
 <div id="rovers">
 <div class="container">
-<h1>Explorers</h1>
-{{#each data.data.photos}}
-				
-	<div class="col-sm-9 text-center">
-		<pre>{{this.img_src}}. {{this}}
-					</pre>
-					<!-- {{this.Date}} -->
-				</div>
-				<div class="col-sm-3 text-center">
-					<form class="button-size" id="devour-form">
+<h1>Rovers</h1>
 
-						<button type="submit" value={{this.id}} class="btn btn-default devour">
-							it!</button>
-					</form>
-				</div>
-			
-				{{/each}}
+{{#each photos}}
+                
+    <div class="col-sm-9 text-center">
+        <pre>
+            {{id}}            
+            <img class="rovPic" src="{{img_src}}">
+            Launch Date: {{rover.launch_date}}
+            landing_date: {{rover.landing_date}}
+        </pre>
+	</div>
+            
+{{/each}}
+
 </div>
-</div>
+</div> 

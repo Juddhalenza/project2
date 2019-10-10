@@ -47,3 +47,13 @@ button.btn.btn-outline-danger {
 nav.navbar.navbar-dark.bg-dark {
   background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg");
 }
+
+h2 {
+  font-family: Faster One’, cursive;
+}
+.container{
+  background-image:url(/public/shinning-stars-space-background.jpg);
+  background-repeat:no-repeat;
+   background-size:cover;
+   background-attachment:fixed;
+  }

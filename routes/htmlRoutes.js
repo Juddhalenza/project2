@@ -39,6 +39,29 @@ module.exports = function(app) {
         });
       });
   });
+
+  app.get("/api/mars", function (req, res) {
+    // get route params
+    var mars = req.params.id;
+    console.log(mars);
+    // check for query arguments
+    // res.json(data);
+    // build our query to the db or build a URL to make a request to an external api for this data
+    axios
+      .get(
+        "https://api.nasa.gov/insight_weather/?api_key=Yg0nubAuazdBXPOMSsk7GcCa4wjJjAIaYVSBjB78&feedtype=json&ver=1.0"
+      )
+      .then(function (data) {
+        console.log(data.data);
+        return res.render("mars", data.data);
+      });
+  });
+
+  // render mars page
+  app.get("/mars", function(req, res) {
+    res.render("mars");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");

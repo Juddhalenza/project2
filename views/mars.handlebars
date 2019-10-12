@@ -6,28 +6,33 @@
        {{!-- then we target each object key i.e. 302, 303, etc --}}
        {{!-- ensure no emty divs --}}
        {{#if this.First_UTC}}
-       <div>
-           Date: {{this.First_UTC}}
-       </div>
-       {{/if}}
-       {{#if this.Season}}
-       <div class="{{@key}}" class="col-sm-9 text-center">
-           {{!-- Then we can target the item we need.  --}}
-           {{!-- Keep nesting as needed --}}
-           Season: {{this.Season}}
-       </div>
-       {{/if}}
-       {{#if this.AT}}
-       <div>
-           Low: {{this.AT.mn}}
-           High: {{this.AT.mx}}
-       </div>
-       {{/if}}
-       <br>
-        {{#if this.WD}}
-       <div>
-           WD: {{this.WD.most_common.compass_point}}
-       </div>
+       <div id="mars_data_container">
+            <div>
+                Date: {{this.First_UTC}}
+            </div>
+            {{/if}}
+            {{#if this.Season}}
+            <div class="{{@key}}" class="col-sm-9 text-center">
+                {{!-- Then we can target the item we need.  --}}
+                {{!-- Keep nesting as needed --}}
+                Season: {{this.Season}}
+            </div>
+            {{/if}}
+            {{#if this.AT}}
+            <div>
+                Temp. Low: {{this.AT.mn}}
+            </div>
+            <div>
+                Temp. High: {{this.AT.mx}}
+            </div>
+            {{/if}}
+                {{#if this.WD}}
+            <div>
+                Wind Direction: {{this.WD.most_common.compass_point}}
+            </div>
+            <br>
+            <br>
+        </div>
         {{/if}}
        {{/each}}
    </div>

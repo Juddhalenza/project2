@@ -40,7 +40,7 @@ module.exports = function(app) {
       });
   });
 
-  app.get("/api/mars", function(req, res) {
+  app.get("/mars", function(req, res) {
     // get route params
     var mars = req.params.id;
     console.log(mars);

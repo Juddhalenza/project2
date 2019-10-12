@@ -2,10 +2,10 @@
   line-height: 2.5;
 }
 
- body {
+body {
   background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg") no-repeat center center fixed;
   background-size: cover;
- }
+}
 
 h1 {
   font-family: 'Faster One', cursive;

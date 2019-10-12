@@ -40,7 +40,7 @@ module.exports = function(app) {
       });
   });
 
-  app.get("/api/mars", function (req, res) {
+  app.get("/api/mars", function(req, res) {
     // get route params
     var mars = req.params.id;
     console.log(mars);
@@ -51,7 +51,7 @@ module.exports = function(app) {
       .get(
         "https://api.nasa.gov/insight_weather/?api_key=Yg0nubAuazdBXPOMSsk7GcCa4wjJjAIaYVSBjB78&feedtype=json&ver=1.0"
       )
-      .then(function (data) {
+      .then(function(data) {
         console.log(data.data);
         return res.render("mars", data.data);
       });

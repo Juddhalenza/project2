@@ -46,3 +46,9 @@ nav.navbar.navbar-dark.bg-dark {
   background: url("https://spaceflight.nasa.gov/gallery/images/station/crew-6/hires/iss006e40544.jpg");
 }
 
+pre {
+color: white;
+text-align: center;
+font-weight: bolder;
+margin-left: 40px;
+}

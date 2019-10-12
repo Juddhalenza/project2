@@ -1,0 +1,17 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "description": "stargazer",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "project2",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
